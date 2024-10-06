@@ -114,12 +114,12 @@ double pie(long int n)
     double pi_estimate = 0.0;
     for (long int i = 0; i < n; i++) {
         if (i % 2 == 0) {
-            pi_estimate += 1.0 / (2 * i + 1);  // Add terms with a positive sign
+            pi_estimate += 1.0 / (2 * i + 1);  
         } else {
-            pi_estimate -= 1.0 / (2 * i + 1);  // Subtract terms with a negative sign
+            pi_estimate -= 1.0 / (2 * i + 1); 
         }
     }
-    return pi_estimate * 4;  // Multiply by 4 to get the value of π
+    return pi_estimate * 4; 
 }
 
 
