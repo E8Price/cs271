@@ -1,0 +1,23 @@
+Hack Assembler
+Overview
+This project implements an assembler for the Hack computer, translating Hack assembly language (.asm) files into machine code (.hack) files
+
+Files
+main.c: The driver program
+parser.c and parser.h: Handles parsing of Hack assembly instructions
+symtable.c and symtable.h: Manages labels and variables in the symbol table
+error.c and error.h: Handles error reporting
+hack.h: Contains constants and type definitions
+
+How to Compile
+Run the following command in the project directory:
+
+gcc -o assembler main.c parser.c symtable.c error.c
+
+How to Run
+Place your .asm file in the project directory.
+Run the assembler with:
+
+./assembler <filename>.asm
+
+The output will be a .hack file with the same name as the input.
